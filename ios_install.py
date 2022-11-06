@@ -15,6 +15,8 @@ print("    - You need to have iproxy and ideviceinstaller installed (brew instal
 
 print("You will now be asked a few questions")
 
+build_jailbreakd = False
+
 if build_jailbreakd:
     csIdentity = getAnswer("What is the name of your iOS Signing Certificate? [Apple Dev] ")
     if csIdentity == "":
