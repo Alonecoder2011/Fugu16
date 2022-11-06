@@ -12,21 +12,8 @@ print("    - The device must be connected via USB")
 print("    - You need the IPSW for your device, *unzipped*")
 print("    - You need to have Xcode installed")
 print("    - You need to have iproxy and ideviceinstaller installed (brew install usbmuxd ideviceinstaller)")
-getAnswer("Press enter to continue or Ctrl+C to abort...")
 
 print("You will now be asked a few questions")
-
-build_jailbreakd = False
-
-while True:
-    ans = getAnswer("Do you want to build jailbreakd? [y/N] ")
-    if ans == "" or ans.lower() == "n" or ans.lower() == "no":
-        break
-    elif ans.lower() == "y" or ans.lower() == "yes":
-        build_jailbreakd = True
-        break
-    else:
-        print("Please answer yes or no!")
 
 if build_jailbreakd:
     csIdentity = getAnswer("What is the name of your iOS Signing Certificate? [Apple Dev] ")
