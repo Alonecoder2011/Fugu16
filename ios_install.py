@@ -3,12 +3,6 @@
 import subprocess
 import os
 
-def getAnswer(text):
-    try:
-        return input(text)
-    except KeyboardInterrupt:
-        print("\nCtrl+C pressed, aborting")
-        exit(-2)
 
 print("Welcome to the Fugu16 iOS installer.")
 print("This script will build and install Fugu16 on your device.")
